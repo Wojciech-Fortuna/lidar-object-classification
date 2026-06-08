@@ -1,0 +1,83 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# =========================
+# Virtual environments
+# =========================
+
+venv/
+.venv/
+env/
+
+
+# =========================
+# IDE
+# =========================
+
+.idea/
+.vscode/
+
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Operating system files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# DALES dataset
+# =========================
+
+DALESObjects/
+DALESObjects.tar.gz
+
+
+# =========================
+# LAS flight data
+# =========================
+
+obloty/
+obloty.zip
+
+
+# =========================
+# Results
+# =========================
+
+results/*.png
+results/*.jpg
+results/*.jpeg
+results/*.csv
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# Data
+data/*
+
+# Models
+models/*
+
+# Keep directories
+!data/.gitkeep
+!models/.gitkeep
