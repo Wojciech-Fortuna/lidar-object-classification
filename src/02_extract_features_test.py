@@ -6,13 +6,10 @@ from plyfile import PlyData
 from tqdm import tqdm
 
 
-DATA_PATH = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\DALESObjects\test"
-)
+PROJECT_DIR = Path(__file__).resolve().parents[1]
 
-OUTPUT_PATH = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\data"
-)
+DATA_PATH = PROJECT_DIR / "DALESObjects" / "train"
+OUTPUT_PATH = PROJECT_DIR / "data"
 
 OUTPUT_PATH.mkdir(exist_ok=True)
 

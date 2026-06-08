@@ -6,9 +6,8 @@ import open3d as o3d
 from plyfile import PlyData
 
 
-PLY_FILE = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\DALESObjects\train\5080_54435_new.ply"
-)
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+PLY_FILE = PROJECT_DIR / "DALESObjects" / "train" / "5080_54435_new.ply"
 
 GROUND_CLASS = 1
 

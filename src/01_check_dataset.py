@@ -1,9 +1,8 @@
 from pathlib import Path
 from plyfile import PlyData
 
-DATA_PATH = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\DALESObjects\train"
-)
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+DATA_PATH = PROJECT_DIR / "DALESObjects" / "train"
 
 ply_files = sorted(DATA_PATH.glob("*.ply"))
 ply_files = [p for p in ply_files if not p.name.startswith("._")]
