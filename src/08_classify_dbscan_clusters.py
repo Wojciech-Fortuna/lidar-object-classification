@@ -8,13 +8,10 @@ import open3d as o3d
 from plyfile import PlyData
 
 
-PLY_FILE = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\DALESObjects\train\5080_54435_new.ply"
-)
+PROJECT_DIR = Path(__file__).resolve().parents[1]
 
-MODEL_PATH = Path(
-    r"C:\Users\Wojciech Fortuna\IWIUM\Project\models\random_forest.pkl"
-)
+PLY_FILE = PROJECT_DIR / "DALESObjects" / "train" / "5080_54435_new.ply"
+MODEL_PATH = PROJECT_DIR / "models" / "random_forest.pkl"
 
 GROUND_CLASS = 1
 
